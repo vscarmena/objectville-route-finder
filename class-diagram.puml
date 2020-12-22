@@ -1,0 +1,36 @@
+@startuml
+
+class SubwayLoader {
+    subway: Subway
+    + loadFromFile(File)
+}
+
+class Subway {
+    + addStation(String)
+    + hasStation(String): Boolean
+    + addConnection(String, String, String)
+    + hasConnection(String, String, String): Boolean
+}
+
+class Station {
+    - name
+    + getName(): String
+    + equals(Object): Boolean
+    + hashCode(): int
+}
+
+class Connection {
+    - station1
+    - station2
+    - lineName
+    + getStation1(): String
+    + getStation2(): String
+    + getLineName(): String
+}
+
+SubwayLoader --> Subway
+
+Subway --> Station
+Subway --> Connection
+
+@enduml
