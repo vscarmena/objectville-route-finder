@@ -1,6 +1,6 @@
 # Objectville Route Finder
 
-Objectville Route Finder is a Kotlin project for solving chapter 10 problem of book [Head First Object-Oriented Analysis and Design](https://www.oreilly.com/library/view/head-first-object-oriented/0596008678/).
+Objectville Route Finder is the problem proposed to solve in chapter 10 of book [Head First Object-Oriented Analysis and Design](https://www.oreilly.com/library/view/head-first-object-oriented/0596008678/). The original version [was implemented in Java](https://resources.oreilly.com/examples/9780596008673) and this project is a Kotlin version compatible with JVM 11.
 
 # Description
 
