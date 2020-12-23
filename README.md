@@ -22,7 +22,7 @@ The actors and the use cases are the following:
 
 # Requirements
 
-The necessary steps to implement the use cases are:
+The necessary steps to implement each use case are:
 
 ## Load Network of subway
 
@@ -31,6 +31,12 @@ The necessary steps to implement the use cases are:
 3. Read every line and add connections between stations
 
 Validate each operation before adding to the subway is needed to ensure that the system is working properly.
+
+## Get Directions
+
+1. Enter a starting, and a destination station
+2. Calculate the route between stations
+3. Print out the route
 
 # Design
 
