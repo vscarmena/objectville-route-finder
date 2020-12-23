@@ -42,7 +42,7 @@ To run the test cases:
 
 `$ ./gradlew test`
 
-## Usage
+# Usage
 
 To run the application only execute this command with gradle:
 
