@@ -10,6 +10,9 @@ class Subway {
     + hasStation(String): Boolean
     + addConnection(String, String, String)
     + hasConnection(String, String, String): Boolean
+    + addToNetwork(Station, Station)
+    + getDirections(String, String): List<Connection>
+    + getConnection(Connection, Connection): Connection
 }
 
 class Station {
