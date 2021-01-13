@@ -64,6 +64,7 @@ data class Subway(
     }
 
     fun getDirections(startStationName: String, endStationName: String): List<Connection> {
+        logger.info("Getting directions from $startStationName to $endStationName")
         if (!this.hasStation(startStationName) || !this.hasStation(endStationName)) {
             throw RuntimeException("Stations entered do not exist on this subway")
         }
@@ -117,7 +118,6 @@ data class Subway(
 
         while (keepLooping) {
             station = previousStations[keyStation]!!
-            logger.info("added route -> $station - $keyStation")
             route.add(0, getConnection(station, keyStation))
             if (startStation == station) {
                 keepLooping = false
@@ -125,7 +125,6 @@ data class Subway(
             keyStation = station
         }
 
-        logger.info(route.toString())
         return route
     }
 
@@ -133,7 +132,6 @@ data class Subway(
         return connections.stream()
             .filter { connection -> connection.station1 == station1 && connection.station2 == station2 }
             .findFirst().orElseThrow { RuntimeException("Connection not found") }
-
     }
 
 }
